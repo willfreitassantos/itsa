@@ -1,0 +1,122 @@
+.delivery-on {
+	width: 60%;
+	display: inline-block;
+	font-family: "Oxygen Regular";
+	font-size: 16px;
+	text-align: center;
+}
+
+.delivery-on h1,
+.delivery-on h2 {
+	margin: 0;
+}
+
+.logo {
+	width: 40%;
+	display: inline-block;
+}
+
+.logo img {
+	display: block;
+	margin: 0 auto;
+}
+
+.logo a {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Bebas Neue";
+	letter-spacing: 3px;
+	padding-top: 10px;
+	color: inherit;
+}
+
+main {
+	margin-top: 30px;
+}
+
+.content-description {
+	font-family: "Oxygen Regular";
+	font-size: 24px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px;
+	font-weight: 700;
+}
+
+.company-name {
+	font-family: "Bebas Neue";
+	letter-spacing: 2px;
+	font-size: 24px;
+	width: 70%;
+	margin: 0 auto;
+	display: table;
+}
+
+table {
+	width: 70%;
+	margin: 0 auto;
+	font-family: "Oxygen Regular";
+	text-align: left;
+	border-collapse: collapse;
+}
+
+th, td {
+		border-bottom: 1px solid #ddd;
+		padding: 4px 0;
+}
+
+th + th, td + td {
+	width: 30%;
+}
+
+table tr th.store-name {
+	text-align: center;
+}
+
+table tr th.store-name {
+	background-color: #ddd;
+}
+
+table + .company-name {
+	margin-top: 30px;
+}
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		text-shadow: none !important;
+		filter: none !important;
+		-ms-filter: none !important;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	@page {
+		margin: 2cm;
+	}
+
+	.company-name {
+		width: 92%;
+	}
+
+	table {
+		width: 92%;
+		font-size: 12pt;
+	}
+
+	.delivery-on {
+		font-size: 11pt;
+	}
+
+	.content-description,
+	.company-name {
+		font-size: 14pt;
+	}
+}

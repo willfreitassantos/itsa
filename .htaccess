@@ -1,0 +1,34 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^home$							./index.php
+RewriteRule ^login$							./index.php
+
+RewriteRule ^orders/([0-9]+)$				./src/logic/orders/select-by-id.php?order-id=$1
+RewriteRule ^orders/remove/([0-9]+)$		./src/logic/orders/remove.php?order-id=$1
+RewriteRule ^orders/new$					./src/view/orders/new.php
+RewriteRule ^orders/select-store$			./src/logic/orders/select-store.php
+RewriteRule ^orders/select-product$			./src/logic/orders/select-products-to-order.php
+RewriteRule ^orders/previous/filter$		./src/logic/orders/filter-previous-orders.php
+RewriteRule ^orders/today/filter$			./src/logic/orders/filter-today-orders.php
+RewriteRule ^orders/info$					./src/view/orders/info.php
+RewriteRule ^orders/info/validate$			./src/logic/orders/validate-order-info.php
+RewriteRule ^orders/complete$				./src/view/orders/complete.php
+RewriteRule ^orders/finish$					./src/logic/orders/finish-order.php
+RewriteRule ^orders/production-list$		./src/view/orders/production-list.php
+RewriteRule ^orders/production-list/filter$	./src/logic/orders/production-list/filter.php
+RewriteRule ^orders/delivery-docket$		./src/view/orders/delivery-docket.php
+RewriteRule ^orders/delivery-docket/filter$	./src/logic/orders/delivery-docket/filter.php
+RewriteRule ^orders/period-report$			./src/view/orders/period-report.php
+RewriteRule ^orders/period-report/filter$	./src/logic/orders/period-report/filter.php
+RewriteRule ^orders/form-update/([0-9]+)$	./src/logic/orders/form-update.php?order-id=$1
+RewriteRule ^orders/select-product-update$	./src/logic/orders/select-products-to-update.php
+RewriteRule ^orders/complete-update			./src/logic/orders/form-complete-update.php
+RewriteRule ^orders/update$					./src/logic/orders/update.php
+RewriteRule ^user/sign-in$					./src/logic/user/sign-in.php
+RewriteRule ^orders/importcsv$					./src/logic/orders/import_csv.php
+RewriteRule ^orders/importcsv-end$					./src/logic/orders/import_csv_end.php

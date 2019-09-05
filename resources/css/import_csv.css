@@ -1,0 +1,19 @@
+#exampleModalLabel {
+  font-family: "Oxygen Regular";
+  font-weight: bold;
+}
+
+.btn-import-csv {
+  text-align: center;
+  font-family: "Avenir";
+  font-size: 17px;
+  font-weight: 800;
+  background-color: #9f0766;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.spanSeparator {
+  font-family: "Oxygen Regular";
+}

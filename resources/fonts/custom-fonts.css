@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("bebas/BebasNeue.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("bebas/BebasNeue-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("avenir/AEH.ttf") format("truetype");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Avenir";
+	src: url("avenir/AvenirRoman.otf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Oxygen Regular";
+	src: url("oxygen/Oxygen-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Lato Regular";
+	src: url("lato/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Lato Heavy";
+	src: url("lato/Lato-Heavy.ttf");
+}

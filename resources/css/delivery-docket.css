@@ -1,0 +1,184 @@
+.delivery-info {
+	width: 60%;
+	display: inline-block;
+	font-family: "Oxygen Regular";
+	font-size: 16px;
+	text-align: center;
+}
+
+.delivery-info h1 {
+	margin: 0;
+	display: block;
+}
+
+.delivery-info span {
+	display: inline-block;
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 3px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.delivery-info span strong {
+	margin-right: 15px;
+}
+
+.logo {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5%;
+}
+
+.logo img {
+	display: block;
+	margin: 0 auto;
+}
+
+.logo a {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Bebas Neue";
+	letter-spacing: 3px;
+	padding-top: 10px;
+	color: inherit;
+}
+
+.logo span.order-number {
+	font-family: "Oxygen Regular";
+	font-size: 16px;
+	color: #9f071a;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.ordered-items {
+	margin-top: 30px;
+}
+
+.content-description {
+	font-family: "Oxygen Regular";
+	font-size: 24px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px;
+	font-weight: 700;
+}
+
+table {
+	width: 70%;
+	margin: 0 auto;
+	font-family: "Oxygen Regular";
+	text-align: left;
+	border-collapse: collapse;
+}
+
+th + th, td + td {
+	width: 30%;
+}
+
+th, td {
+		border-bottom: 1px solid #ddd;
+		padding: 4px 0;
+}
+
+table tr th.store-name {
+	text-align: center;
+}
+
+.signatures-wrapper {
+	width: 70%;
+	margin: 5% auto 0 auto;
+	display: table;
+}
+
+.signatures-wrapper > div {
+	width: 33%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.signatures-wrapper > div span.signator {
+	display: inline-block;
+}
+
+.signatures-wrapper > div span.signature {
+	width: 60%;
+	display: inline-block;
+	border-bottom: 1px solid #666;
+}
+
+.signatures + div {
+	margin-top: 150px;
+}
+
+.signator {
+	font-family: "Oxygen Regular";
+}
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		text-shadow: none !important;
+		filter: none !important;
+		-ms-filter: none !important;
+		float: none;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	@page {
+		margin: 2cm;
+	}
+
+	.signatures + div {
+		page-break-after: always;
+	}
+
+	.delivery-info {
+		font-size: 11pt;
+		text-align: left;
+	}
+
+	.delivery-info span {
+		width: 90%;
+		font-size: 12pt;
+	}
+
+	.date {
+		margin-top: 16pt !important;
+	}
+
+	.content-description {
+		font-size: 14pt;
+	}
+
+	.logo span.order-number {
+		font-size: 12pt;
+		margin-top: 45%;
+	}
+
+	table {
+		font-size: 12pt;
+		width: 100%;
+	}
+
+	.signatures-wrapper {
+		width: 90%;
+		margin-top: 10%;
+	}
+
+	.signatures-wrapper > div span.signature {
+		width: 50%;
+	}
+}

@@ -1,0 +1,105 @@
+/*
+    Template Name: ST
+    Author:  sitetemplatedesign
+    Website: sitetemplatedesign.com
+	Skype ID : fardous.khan30
+
+*/
+
+.container {
+    max-width: 1570px;
+}
+
+
+
+/*------------------Tab monitor: 1200px.
+ --------------------------------------*/
+@media only screen and (max-width: 1200px) {
+
+	
+	
+	
+}
+
+/*------------------Tab Layout: 991px.
+ -------------
+-------------------------*/
+@media only screen and (max-width: 991px) {
+
+.product_order_cart th{display: none;}	
+.product_order_cart tr { display: block; margin-bottom: 20px; padding: 10px 0; }
+.product_order_cart td {border-bottom: 1px solid #ddd;display: block;text-align: right;line-height: 24px; }
+.product_order_cart td::before {content: attr(data-label);float: left;font-weight: bold;text-transform: uppercase;font-family: 'Montserrat', sans-serif;color: #5a5a5a;}
+.product_order_cart td:last-child { border-bottom: 0;}	
+.product_item_cart{margin-left: auto;width: 240px;}
+.quantity_numbar{margin-left: auto;width: 150px;display: block;}	
+	
+}
+
+
+
+/*------------------Mobile Layout all : 767px.
+ ---------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+.order-prograss li .procesing:before {right: 10px;}
+.order-prograss li .procesing { padding: 10px 10px;}
+.product_order_cart,.product_order_summary { padding: 20px 15px;}	
+	
+
+}
+
+/*------------------Mobile Layout all : 640px.
+ ---------------------------------------------*/
+
+@media only screen and (max-width: 640px) {
+.product_container {padding-left: 0px;padding-right: 0px;	}
+.order_hist_content {margin: 30px 15px 15px 9px; padding: 20px 5px;}	
+.order_hist_search {display: block;float: none; border-left: 0px; margin-top: 15px; padding-left: 30px;}
+.order_hist_search .order_hist_submit {position: absolute;left: -8px;}
+	
+.order-prograss li .procesing:before {right: 8px;}
+.order-prograss li .procesing { padding: 10px 15px;}
+	
+table.previous-order th,table.today-order th{display: none;}	
+table.previous-order tr { display: block; margin-bottom: 20px; }
+table.previous-order td {border-bottom: 1px solid #ddd;display: block;text-align: right;line-height: 24px; }
+table.previous-order td::before {content: attr(data-label);float: left;font-weight: bold;text-transform: uppercase;}
+table.previous-order td:last-child { border-bottom: 0;}
+	
+table.today-order tr { display: block; margin-bottom: 20px; }
+table.today-order td {border-bottom: 1px solid #ddd;display: block;text-align: right;line-height: 24px; }
+table.today-order td::before {content: attr(data-label);float: left;font-weight: bold;text-transform: uppercase;}
+table.today-order td:last-child { border-bottom: 0;}	
+table.today-order td .btn_1st,table.today-order td .btn_2nd,
+table.previous-order td .btn_2nd,table.previous-order td .btn_1st{margin-top: 10px;}
+	
+	
+
+}
+
+
+
+/*------------------Mobile Layout custom : 480px.
+ -------------------------------------------------*/
+
+@media only screen and (max-width:480px) {
+.order-prograss li .procesing { font-size: 10px;}
+
+
+
+}
+
+
+
+
+/*------------------Mobile Layout custom : 320px.
+ -------------------------------------------------*/
+
+@media only screen and (max-width:320px) {
+	
+
+
+
+}
+
